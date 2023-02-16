@@ -1,0 +1,17 @@
+t=-1:0.001:1;
+i=t==0;
+u=t>=0;
+r=u.*t;
+p=u.*t.^2;
+subplot(411);
+plot(t,i);
+title("21ucc015-impulse");
+subplot(412);
+plot(t,u);
+title("21ucc015-unit-step");
+subplot(413);
+plot(t,r);
+title("21ucc015-ramp");
+subplot(414);
+plot(t,p);
+title("21ucc015-parabolic");
